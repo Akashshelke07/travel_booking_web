@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import { RiCompassDiscoverFill } from "react-icons/ri";
@@ -7,21 +6,10 @@ function Home() {
   return (
     <div style={{ position: 'relative', textAlign: 'center', fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif` }}>
       {/* Background Image */}
-=======
-import React from 'react'
-
-
-
-function Home() {
-  
-  return (
-    <div style={{ position: 'relative', textAlign: 'center' }}>
->>>>>>> bc5b5a9fb1f2b1b2518431289ccac32a5c64f572
       <img
         src="https://t4.ftcdn.net/jpg/03/05/77/55/240_F_305775533_zsJZnX0m5fyXs6G0nSlDJIUgaPUWmMmb.jpg"
         alt="Sample"
         className="img-fluid"
-<<<<<<< HEAD
         style={{
           width: '100%',
           height: '620px',
@@ -45,7 +33,6 @@ function Home() {
           boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
           maxWidth: '90%', // Ensures content is responsive
           width: '100%', // To ensure it does not overflow on small screens
-          // margin: '20px', // Default margin for larger screens
         }}
       >
         <h1
@@ -89,9 +76,6 @@ function Home() {
       <style>
         {`
           @media (max-width: 768px) {
-            .overlay-content {
-              margin: 10px; /* Reduce margin on medium screens */
-            }
             h1 {
               font-size: 2rem;
             }
@@ -111,9 +95,6 @@ function Home() {
           }
 
           @media (max-width: 480px) {
-            .overlay-content {
-              margin: 5px; /* Reduce margin further on small screens */
-            }
             h1 {
               font-size: 1.6rem;
             }
@@ -129,7 +110,6 @@ function Home() {
             button {
               padding: 0.6rem 1rem;
               font-size: 0.8rem;
-              margin: 5px;
             }
           }
         `}
@@ -139,37 +119,3 @@ function Home() {
 }
 
 export default Home;
-=======
-        style={{ width: '100%', height: '620px' }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: '40%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          color: 'white',
-          
-          //fontWeight: 'bold',
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
-        }}
-      ><h1 style={{
-        fontSize:'2.5rem',lineheight:'1',fondweight:'600px'
-        
-      }}>
-        Explore the World, One Journey at a Time
-      </h1>
-      <p>
-  Welcome to Yoliday, your gateway to unforgettable adventures. Whether you're dreaming of sun-soaked beaches, snow-capped mountains, or bustling city escapes, we've got you covered.
-</p>
-
-        
-        
-      </div>
-    </div>
-  )
-  
-}
-
-export default Home;
->>>>>>> bc5b5a9fb1f2b1b2518431289ccac32a5c64f572
