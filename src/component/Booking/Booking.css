@@ -4,17 +4,22 @@
     padding: 2rem;
     width: 90%;
     max-width: 600px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Styling form elements */
 .booking-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* Label Styling */
@@ -24,6 +29,7 @@
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 14px;
+    color: #555;
 }
 
 /* Input Styling */
@@ -32,8 +38,16 @@
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 14px;
+    background-color: #fff;
+    transition: border 0.3s ease;
+}
+
+/* Focus Input Styling */
+.form-input:focus {
+    border: 1px solid #3498db;
+    outline: none;
 }
 
 /* Submit Button Styling */
@@ -45,10 +59,16 @@
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+.submit-button:hover {
+    background-color: #2980b9;
 }
 
 /* Responsive Design */
