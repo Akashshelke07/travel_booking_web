@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
       textAlign: 'center',
       padding: '10px',
       fontSize: '14px',
-      position: 'relevent',
+      position: 'relative',
       width: '100%',
       bottom: '0',
       left: '0'
@@ -18,5 +18,4 @@ function Footer() {
   );
 }
 
-export default Footer
-
+export default Footer;

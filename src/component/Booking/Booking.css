@@ -1,105 +1,96 @@
-/* Styling the form container */
-.form-container {
+.booking-form {
     margin: 3rem auto;
     padding: 2rem;
-    width: 90%;
-    max-width: 600px;
-    background-color: #f7f7f7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
+    width: 40%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-/* Styling form elements */
-.booking-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* Label Styling */
 .form-label {
     display: block;
     text-align: left;
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 14px;
-    color: #555;
 }
 
-/* Input Styling */
 .form-input {
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.2rem;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: #fff;
-    transition: border 0.3s ease;
+    border-radius: 5px;
 }
 
-/* Focus Input Styling */
-.form-input:focus {
-    border: 1px solid #3498db;
-    outline: none;
-}
-
-/* Submit Button Styling */
-.submit-button {
-    display: block;
-    width: 100%;
-    padding: 1rem;
+.price-summary {
     margin-top: 1rem;
-    background-color: #3498db;
+    padding: 1rem;
+    background-color: #eaf4fa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.submit-button {
+    padding: 0.7rem 1.5rem;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
-/* Submit Button Hover Effect */
 .submit-button:hover {
-    background-color: #2980b9;
+    background-color: #45a049;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .form-container {
-        width: 95%;
-        padding: 1.5rem;
-    }
+/* Styling for Destination Info (no image) */
+.destination-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
 
-    .form-input {
-        padding: 0.65rem;
-    }
+.destination-info h3 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
 
-    .submit-button {
-        padding: 0.9rem;
-        font-size: 14px;
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .booking-form {
+        width: 60%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .form-container {
-        width: 100%;
+@media (max-width: 768px) {
+    .booking-form {
+        width: 80%;
         padding: 1rem;
     }
 
+    .submit-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-form {
+        width: 90%;
+        padding: 0.8rem;
+    }
+
     .form-input {
-        padding: 0.5rem;
+        padding: 0.8rem;
     }
 
     .submit-button {
-        padding: 0.8rem;
         font-size: 14px;
     }
 }

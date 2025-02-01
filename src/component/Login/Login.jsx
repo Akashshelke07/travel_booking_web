@@ -11,6 +11,7 @@ function Login({ setIsLoggedIn }) {
   const handleLogin = (e) => {
     e.preventDefault();
     console.log(email, password);
+    // Simulating successful login
     setIsLoggedIn(true);
   };
 

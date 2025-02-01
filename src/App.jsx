@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './component/Navbar/Navbar.jsx';
 import Home from './component/Home.jsx';
 import Login from './component/Login/Login.jsx';
@@ -18,8 +18,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Destination" element={<Destination />} />
-          <Route path="/Login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/Booking" element={<Booking />} />
+          <Route 
+            path="/Login" 
+            element={<Login setIsLoggedIn={setIsLoggedIn} />} 
+          />
+          {/* If not logged in, redirect to Login page */}
+          <Route 
+            path="/Booking" 
+            element={isLoggedIn ? <Booking /> : <Navigate to="/Login" />} 
+          />
         </Routes>
       </>
       <Footer />

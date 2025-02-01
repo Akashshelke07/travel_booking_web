@@ -1,22 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import { RiCompassDiscoverFill } from "react-icons/ri";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 
 function Home() {
   return (
     <div style={{ position: 'relative', textAlign: 'center', fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif` }}>
-      {/* Background Image */}
-      <img
-        src="https://t4.ftcdn.net/jpg/03/05/77/55/240_F_305775533_zsJZnX0m5fyXs6G0nSlDJIUgaPUWmMmb.jpg"
-        alt="Sample"
-        className="img-fluid"
-        style={{
-          width: '100%',
-          height: '620px',
-          objectFit: 'cover',
-          filter: 'brightness(70%)', // Darkens image for better text contrast
-        }}
-      />
+      {/* Carousel */}
+      <Carousel autoPlay infiniteLoop showThumbs={false} dynamicHeight={false} interval={5000} transitionTime={1000}>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1450372/pexels-photo-1450372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Travel 1"
+            style={{
+              width: '100%',
+              height: '620px',
+              objectFit: 'cover',
+              filter: 'brightness(70%)',
+            }}
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/9470504/pexels-photo-9470504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Travel 2"
+            style={{
+              width: '100%',
+              height: '620px',
+              objectFit: 'cover',
+              filter: 'brightness(70%)',
+            }}
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Travel 3"
+            style={{
+              width: '100%',
+              height: '620px',
+              objectFit: 'cover',
+              filter: 'brightness(70%)',
+            }}
+          />
+        </div>
+      </Carousel>
 
       {/* Overlay Content */}
       <div
@@ -28,11 +57,11 @@ function Home() {
           color: 'white',
           textAlign: 'center',
           padding: '1rem',
-          backgroundColor: 'rgba(0, 0, 0, 0.6)', // Subtle background for text clarity
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
           borderRadius: '10px',
           boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
-          maxWidth: '90%', // Ensures content is responsive
-          width: '100%', // To ensure it does not overflow on small screens
+          maxWidth: '90%',
+          width: '100%',
         }}
       >
         <h1
@@ -72,7 +101,7 @@ function Home() {
         </Link>
       </div>
 
-      {/* Media Queries for Responsive Margins */}
+      {/* Media Queries for Responsive Design */}
       <style>
         {`
           @media (max-width: 768px) {
@@ -84,7 +113,7 @@ function Home() {
               font-size: 1rem;
             }
 
-            .img-fluid {
+            .carousel img {
               height: 400px;
             }
 
@@ -103,7 +132,7 @@ function Home() {
               font-size: 0.9rem;
             }
 
-            .img-fluid {
+            .carousel img {
               height: 350px;
             }
 
